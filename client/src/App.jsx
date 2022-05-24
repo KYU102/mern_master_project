@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Homepage from './views/Homepage';
 import List from './views/List';
 import Stream from './views/Stream';
-import Slide from './components/Slide';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 

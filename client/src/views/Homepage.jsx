@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Slide from '../components/Slide'
+import { Link, useNavigate } from "react-router-dom";
 
 const Homepage = () => {
   const [registerState, setRegisterState] = useState({
@@ -20,6 +21,7 @@ const Homepage = () => {
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   const getAllGamers = () => {
     axios
@@ -88,9 +90,9 @@ const Homepage = () => {
           alt="logo"
         />
         <div className="navBarRight">
-          <p className="headerButton" onClick={getAllGamers}>Games</p>
+          <p className="headerButton" onClick={()=>{navigate('/list')}}>Games</p>
           <p>|</p>
-          <p className="headerButton">Account</p>
+          <p className="headerButton" onClick={()=>{navigate('/{user_id}')}}>Account</p>
           <p>|</p>
           <p className="headerButton">Logout</p>
         </div>
