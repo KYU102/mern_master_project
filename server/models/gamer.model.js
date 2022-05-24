@@ -16,7 +16,7 @@ const GamerSchema = mongoose.Schema({
     },
     email: {
       type: String,
-      required: [true, "Email is required"],
+      required: [true, "EMAIL IS REQUIRED"],
       unique: [true, "EMAIL ALREADY EXISTS!"],
       lowercase: true,
       dropDups: true,

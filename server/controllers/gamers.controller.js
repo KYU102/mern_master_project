@@ -51,7 +51,7 @@ module.exports.register = (req, res) => {
             // IS GAMER EXISTS, SEND BACK AN ERROR
             if(gamerExists){
                 return Promise.reject({
-                    errors: {"duplicate": "Email already taken"}
+                    errors: {"duplicate": "EMAIL TAKEN!"}
                 })
             }
             else{
@@ -88,4 +88,5 @@ module.exports.login = (req,res) => {
         })
 
 }
+
 //-----------LOGIN/REGISTRATION AUTHENTICATION---------------------------//
