@@ -84,7 +84,7 @@ const Homepage = () => {
     });
   };
   return (
-    <div className="container">
+    <div>
       <div className="navBar">
         <img
           className="logoB"
@@ -103,6 +103,7 @@ const Homepage = () => {
       <div className="body">
         <div className="bodyLeft"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
         <div className="bodyCenter">
+        <h1>Register</h1>
           <form onSubmit={registerSubmit}>
               <p>
                   First Name:

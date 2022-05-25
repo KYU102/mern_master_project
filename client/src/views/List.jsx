@@ -7,7 +7,7 @@ const List = () => {
 
 
   return (
-    <div className="container">
+    <div>
       <div className="navBar">
         <img
           className="logoB"
