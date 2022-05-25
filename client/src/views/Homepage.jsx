@@ -23,20 +23,6 @@ const Homepage = () => {
   });
   const navigate = useNavigate();
 
-  const getAllGamers = () => {
-    axios
-      .get("http://localhost:8000/api/gamers", { withCredentials: true })
-      .then((res) => console.log(res))
-      .catch((err) => {
-        console.log(err);
-        if (err.response.status === 401) {
-          console.log("UNAUTHORIZED");
-        } else if (err.response.status === 400) {
-          console.log("BAD REQUEST");
-        }
-      });
-  };
-
   const registerSubmit = (e) => {
     e.preventDefault();
     axios
@@ -190,7 +176,9 @@ const Homepage = () => {
         </div>
           <div className="bodyRight"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
       </div>
+      <div style={{backgroundColor: "Black"}}>
       <Slide />
+      </div>
     </div>
   );
 };
