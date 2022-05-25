@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-
 import "./ImageSlider.css";
 
 // 2.

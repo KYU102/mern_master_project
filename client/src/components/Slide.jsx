@@ -1,6 +1,8 @@
 import ImageSlider from './ImageSlider'
 import { VIDEOS } from "../data/data";
-import "./ImageSlider.css"
+import "./ImageSlider.css" 
+import "../App.css"
+
 
 
 function Slide() {

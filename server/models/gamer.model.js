@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 const bcrypt = require("bcrypt")
 
+
 const GamerSchema = mongoose.Schema({
     first_name:{
         type:String,

@@ -3,6 +3,7 @@ import axios from "axios";
 import Slide from '../components/Slide'
 import { Link, useNavigate } from "react-router-dom";
 
+
 const Homepage = () => {
   const [registerState, setRegisterState] = useState({
     first_name: "",
@@ -174,11 +175,9 @@ const Homepage = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Login</button>
             </form>
+            <Slide />
         </div>
           <div className="bodyRight"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
-      </div>
-      <div style={{backgroundColor: "Black"}}>
-      <Slide />
       </div>
     </div>
   );
