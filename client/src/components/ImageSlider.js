@@ -20,7 +20,7 @@ const PrevArrow = ({ onClick }) => {
   );
 };
 
-const ImageSlider = ({ images, slidesToShow = 9 }) => {
+const ImageSlider = ({ images, slidesToShow = 3 }) => {
   // 3.
   const [imageIndex, setImageIndex] = useState(0);
 
