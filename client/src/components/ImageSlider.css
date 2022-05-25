@@ -3,11 +3,7 @@
 
 .App {
   text-align: center;
-  height: 30vh;
-}
-
-.container {
-  padding: 2.5rem 0;
+  height: 40vh;
 }
 .slide {
   transform: scale(0.7);
