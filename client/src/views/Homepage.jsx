@@ -104,6 +104,7 @@ const Homepage = () => {
           className="logoB"
           src={require("../components/images/logo_black.png")}
           alt="logo"
+          onClick={()=>{navigate('/')}}
         />
         <div className="navBarRight">
           <p className="headerButton" onClick={()=>{navigate('/list')}}>Games</p>
