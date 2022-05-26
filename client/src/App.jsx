@@ -14,7 +14,7 @@ function App() {
     setRefresh(!refreshState)
   }
   return (
-    <BrowserRouter>
+    <BrowserRouter> 
       <Routes>
         <Route path="/" element={<Homepage refreshState={refreshState} refresh={refresh}/>}/>
         <Route path="/list" element={<List />}/>

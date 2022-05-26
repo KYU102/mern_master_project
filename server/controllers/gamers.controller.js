@@ -2,6 +2,7 @@ const {Gamer} = require("../models/gamer.model")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken");
 
+
 // TEST
 module.exports.test = (req,res) => {
     res.json("HELLO WORLD")
@@ -90,3 +91,9 @@ module.exports.login = (req,res) => {
 }
 
 //-----------LOGIN/REGISTRATION AUTHENTICATION---------------------------//
+
+// LOG OUT
+module.exports.logout = (req,res) => {
+    res.status(200).clearCookie('gamertoken').json("LOGOUT!");
+    // res.sendStatus(200);
+}
