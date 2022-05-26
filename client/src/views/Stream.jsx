@@ -26,6 +26,7 @@ const Stream = () => {
       <div className="body">
         <div className="bodyLeft"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
         <div className="bodyCenter">
+        {/* ADD BODY CODE HERE */}
         </div>
           <div className="bodyRight"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
       </div>

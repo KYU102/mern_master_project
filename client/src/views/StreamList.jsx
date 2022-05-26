@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Slide from '../components/Slide'
 import { Link, useNavigate } from "react-router-dom";
-import GameStreams from "../components/GameStreams"
+import GameStreams from "./GameStreams"
 
-const List = () => {
+const StreamList = () => {
   const navigate = useNavigate();
 
   const [games, setGames] = useState([]);
@@ -32,7 +32,6 @@ const List = () => {
           <div>
           < GameStreams />
           </div>
-          <Slide />
         </div>
           <div className="bodyRight"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
       </div>
@@ -40,4 +39,4 @@ const List = () => {
   )
 }
 
-export default List
+export default StreamList

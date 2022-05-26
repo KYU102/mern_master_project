@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Homepage from './views/Homepage';
 import List from './views/List';
 import Stream from './views/Stream';
-import StreamList from './views/StreamList';
+import GameStreams from './views/GameStreams';
 import Slide from './components/Slide';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage refreshState={refreshState} refresh={refresh}/>}/>
         <Route path="/list" element={<List />}/>
-        <Route path="/stream_list" element={<StreamList />}/>
+        <Route path="/list/game/:id" element={<GameStreams />}/>
         <Route path="/slide" element={<Slide />}/>
         <Route path="/:gamer_id/" element={<Stream />}/>
       </Routes>

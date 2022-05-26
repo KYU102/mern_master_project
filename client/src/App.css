@@ -48,7 +48,10 @@
     transform: rotate(360deg);
   }
 }
-
+.link {
+  color: white;
+  text-decoration: none;
+}
 .navBar {
   margin: 0 auto;
   padding: 1em;
@@ -61,7 +64,7 @@
 }
 .logoB{
   margin: 0;
-  width: 13em;
+  width: 10em;
   cursor: pointer;
 }
 .navBarRight{
@@ -79,7 +82,7 @@
 .body{
   display: flex;
   width: auto;
-  height: 1000px;
+  height: 1450px;
 }
 .bodyLeft, .bodyRight{
   background-color:black;
