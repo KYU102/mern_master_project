@@ -50,7 +50,7 @@ function GameStreams() {
           <p className="headerButton">Logout</p>
         </div>
       </div>
-      <div className="body" style={{'height':2150}}>
+      <div className="body" style={{'height':2350}}>
         <div className="bodyLeft"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
         <div className="bodyCenter">
           <div>

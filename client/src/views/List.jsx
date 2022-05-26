@@ -26,7 +26,7 @@ const List = () => {
           <p className="headerButton">Logout</p>
         </div>
       </div>
-      <div className="body">
+      <div className="body" style={{'height': 1500}}>
         <div className="bodyLeft"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
         <div className="bodyCenter">
           <div>
