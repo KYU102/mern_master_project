@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Slide from '../components/Slide'
 import { Link, useNavigate } from "react-router-dom";
+import Games from "../components/Games"
 
 const List = () => {
   const navigate = useNavigate();
 
+  const [games, setGames] = useState([]);
 
   return (
     <div>
@@ -23,9 +26,13 @@ const List = () => {
           <p className="headerButton">Logout</p>
         </div>
       </div>
-      <div className="body">
+      <div className="body" style={{'height': 1500}}>
         <div className="bodyLeft"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
         <div className="bodyCenter">
+          <div>
+          < Games />
+          </div>
+          {/* <Slide /> */}
         </div>
           <div className="bodyRight"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
       </div>

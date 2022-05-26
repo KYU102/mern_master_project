@@ -110,7 +110,7 @@ const Homepage = () => {
           <p className="headerButton" onClick={logout}>Logout</p>
         </div>
       </div>
-      <div className="body">
+      <div className="body" style={{'height':1000}}>
         <div className="bodyLeft"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
         <div className="bodyCenter">
         <h1>Register</h1>

@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Slide from '../components/Slide'
 import { Link, useNavigate } from "react-router-dom";
+import GameStreams from "./GameStreams"
 
-const Stream = () => {
+const StreamList = () => {
   const navigate = useNavigate();
 
+  const [games, setGames] = useState([]);
 
   return (
     <div>
@@ -26,12 +29,14 @@ const Stream = () => {
       <div className="body">
         <div className="bodyLeft"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
         <div className="bodyCenter">
+          <div>
+          < GameStreams />
+          </div>
         </div>
           <div className="bodyRight"></div> {/*OUTSIDE BORDER DON'T USE THIS DIV*/}
       </div>
-
     </div>
   )
 }
 
-export default Stream
+export default StreamList
